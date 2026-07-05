@@ -1,23 +1,26 @@
 variable "ami_id" {
-  default = "ami-0ea1cddefe0c4aed5"
+  type = string
 }
 variable "instance_type" {
-  default = "t2.micro"
+  type = string
 }
 
 variable "key_name" {
-  default = "key-tf"
+  type = string
 }
 
 variable "region" {
-  default = "us-east-2"
+  type = string
 }
 
 variable "allowed_ports" {
   type    = list(string)
-  default = ["80", "443", "27017", "22"]
 }
 
-variable "ipv4" {
-  default = "0.0.0.0/0"
+variable "cidr_ipv4" {
+  type = string
+}
+
+variable "cidr_block" {
+  type = string
 }

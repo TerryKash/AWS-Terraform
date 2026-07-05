@@ -1,10 +1,10 @@
-# Local secret files (NEVER PUSH THESE)
+# Local secret files
 *.tfvars
 *.tfvars.json
 terraform.tfvars
 secrets.tf
 
-# Terraform state files (Contains raw secrets and current infrastructure state)
+# Terraform state files
 *.tfstate
 *.tfstate.backup
 .terraform.tfstate.lock.info
