@@ -1,4 +1,4 @@
-variable "ami_id" {
+variable "image_name" {
   type = string
 }
 variable "instance_type" {
@@ -14,7 +14,7 @@ variable "region" {
 }
 
 variable "allowed_ports" {
-  type    = list(string)
+  type = list(string)
 }
 
 variable "cidr_ipv4" {

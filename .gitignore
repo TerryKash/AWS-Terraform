@@ -16,3 +16,6 @@ secrets.tf
 *.pem
 id_rsa
 id_rsa.pub
+
+# terraform graph
+*.dot
